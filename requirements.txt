@@ -1,0 +1,6 @@
+epyt-flow>=0.17.2
+epyt-control
+water-benchmark-hub
+seaborn
+numpy~=2.5.1
+matplotlib~=3.11.1
