@@ -1,0 +1,3 @@
+[submodule "external/NeuralSurrogateKalmanChlorineEstimation"]
+	path = external/NeuralSurrogateKalmanChlorineEstimation
+	url = https://github.com/andreArtelt/NeuralSurrogateKalmanChlorineEstimation.git
