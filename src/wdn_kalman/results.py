@@ -18,32 +18,60 @@ class ExperimentResult:
     n_iters: int
     seed: int
     result_file: Path
+    ensemble_size: int | None = None
 
 
 def save_experiment_result(
     result: ExperimentResult,
     kalman_type: str,
 ) -> Path:
-    """Save an experiment result."""
-    output_file = result.result_file
-    output_file.parent.mkdir(
+    """Save an aggregated experiment result."""
+    result.result_file.parent.mkdir(
         parents=True,
         exist_ok=True,
     )
 
+    saved_values = {
+        "dataset": np.asarray(
+            result.dataset.net_name
+        ),
+        "kalman_type": np.asarray(
+            kalman_type
+        ),
+        "sensors": np.asarray(
+            result.sensors,
+            dtype=np.int64,
+        ),
+        "mean_scores": np.asarray(
+            result.mean_scores,
+            dtype=float,
+        ),
+        "std_scores": np.asarray(
+            result.std_scores,
+            dtype=float,
+        ),
+        "n_iters": np.asarray(
+            result.n_iters,
+            dtype=np.int64,
+        ),
+        "seed": np.asarray(
+            result.seed,
+            dtype=np.int64,
+        ),
+    }
+
+    if result.ensemble_size is not None:
+        saved_values["ensemble_size"] = np.asarray(
+            result.ensemble_size,
+            dtype=np.int64,
+        )
+
     np.savez(
-        output_file,
-        dataset=result.dataset.net_name,
-        kalman_type=kalman_type,
-        sensors=np.asarray(result.sensors),
-        mean_scores=result.mean_scores,
-        std_scores=result.std_scores,
-        n_iters=np.asarray(result.n_iters, dtype=np.int64),
-        seed=np.asarray(result.seed, dtype=np.int64),
+        result.result_file,
+        **saved_values,
     )
 
-    print(f"Saved result to: {output_file}")
-    return output_file
+    return result.result_file
 
 def load_experiment_result(
     input_file: Path,
@@ -67,6 +95,12 @@ def load_experiment_result(
                 f"{dataset.net_name!r} was requested."
             )
 
+        ensemble_size = (
+            int(saved["ensemble_size"].item())
+            if "ensemble_size" in saved.files
+            else None
+        )
+
         return ExperimentResult(
             dataset=dataset,
             sensors=saved["sensors"].astype(
@@ -87,4 +121,5 @@ def load_experiment_result(
                 saved["seed"].item()
             ),
             result_file=input_file,
+            ensemble_size=ensemble_size,
         )

@@ -18,20 +18,29 @@ class BaselinePlot:
         self.paths = paths
 
     def plot_file(
-        self,
-        result: ExperimentResult,
-        kalman_type: str,
+            self,
+            result: ExperimentResult,
+            kalman_type: str,
     ) -> Path:
         """Return the output path for a result plot."""
-        return (
-            self.paths.plots_dir
-            / (
-                f"baseline_"
-                f"{result.dataset.file_prefix}_"
-                f"{kalman_type.lower()}_"
-                f"n_iters={result.n_iters}_"
-                f"seed={result.seed}.png"
+        ensemble_part = ""
+
+        if result.ensemble_size is not None:
+            ensemble_part = (
+                f"ensemble_size="
+                f"{result.ensemble_size}_"
             )
+
+        return (
+                self.paths.plots_dir
+                / (
+                    f"baseline_"
+                    f"{result.dataset.file_prefix}_"
+                    f"{kalman_type.lower()}_"
+                    f"n_iters={result.n_iters}_"
+                    f"{ensemble_part}"
+                    f"seed={result.seed}.png"
+                )
         )
 
     def plot_experiment_results(

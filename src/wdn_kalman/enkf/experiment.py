@@ -106,11 +106,13 @@ class EnKFExperiment:
         std_scores = np.asarray(std_scores)
 
         output_file = (
-            self.paths.aggregated_results_dir
-            / (
-                f"{dataset.file_prefix}_enkf_"
-                f"n_iters={n_iters}_seed={seed}.npz"
-            )
+                self.paths.aggregated_results_dir
+                / (
+                    f"{dataset.file_prefix}_enkf_"
+                    f"n_iters={n_iters}_"
+                    f"ensemble_size={ensemble_size}_"
+                    f"seed={seed}.npz"
+                )
         )
 
         return ExperimentResult(
@@ -121,4 +123,5 @@ class EnKFExperiment:
             n_iters=n_iters,
             seed=seed,
             result_file=output_file,
+            ensemble_size=ensemble_size,
         )
