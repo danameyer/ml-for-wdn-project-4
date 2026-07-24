@@ -1,0 +1,3050 @@
+  Page 1                                    Wed Jul 22 15:01:06 2026
+
+  ******************************************************************
+  *                           E P A N E T                          *
+  *                   Hydraulic and Water Quality                  *
+  *                   Analysis for Pipe Networks                   *
+  *                          Version 2.3.06                        *
+  ******************************************************************
+  
+   
+      Input Data File ................... data/control_cl_injection_scenario-Net1=False_randDemand=True.inp
+      Number of Junctions................ 31
+      Number of Reservoirs............... 1
+      Number of Tanks ................... 0
+      Number of Pipes ................... 34
+      Number of Pumps ................... 0
+      Number of Valves .................. 0
+      Headloss Formula .................. Hazen-Williams
+      Nodal Demand Model ................ PDA
+      Hydraulic Timestep ................ 0.50 hrs
+      Hydraulic Accuracy ................ 0.000010
+      Status Check Frequency ............ 2
+      Maximum Trials Checked ............ 10
+      Damping Limit Threshold ........... 0.000000
+      Maximum Trials .................... 40
+      Quality Analysis .................. Chlorine
+      Water Quality Time Step ........... 5.00 min
+      Water Quality Tolerance ........... 0.01 mg/L
+      Specific Gravity .................. 1.00
+      Relative Kinematic Viscosity ...... 1.00
+      Relative Chemical Diffusivity ..... 1.00
+      Demand Multiplier ................. 1.00
+      Total Duration .................... 2880.00 hrs
+      Reporting Criteria:
+         All Nodes
+         All Links
+   
+  Analysis begun Wed Jul 22 15:01:07 2026
+
+   
+  Hydraulic Status:
+  -----------------------------------------------------------------------
+     0:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 56.84%
+     0:00:00: Reservoir 1 is emptying
+   
+     0:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 53.74%
+   
+     1:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 48.18%
+   
+     1:30:00: Balanced after 13 trials
+              12 nodes had demands reduced by a total of 39.62%
+   
+     2:00:00: Balanced after 11 trials
+              7 nodes had demands reduced by a total of 48.98%
+   
+     2:30:00: Balanced after 8 trials
+              11 nodes had demands reduced by a total of 32.76%
+   
+     3:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 35.94%
+   
+     3:30:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 32.99%
+   
+     4:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 61.74%
+   
+     4:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 46.76%
+   
+     5:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 47.11%
+   
+     5:30:00: Balanced after 7 trials
+              5 nodes had demands reduced by a total of 45.23%
+   
+     6:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 46.31%
+   
+     6:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 52.48%
+   
+     7:00:00: Balanced after 10 trials
+              13 nodes had demands reduced by a total of 42.30%
+   
+     7:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 60.54%
+   
+     8:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 43.62%
+   
+     8:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 49.01%
+   
+     9:00:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 35.14%
+   
+     9:30:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 42.51%
+   
+    10:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 37.23%
+   
+    10:30:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 39.12%
+   
+    11:00:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 45.97%
+   
+    11:30:00: Balanced after 11 trials
+              12 nodes had demands reduced by a total of 50.28%
+   
+    12:00:00: Balanced after 11 trials
+              12 nodes had demands reduced by a total of 59.79%
+   
+    12:30:00: Balanced after 8 trials
+              5 nodes had demands reduced by a total of 45.79%
+   
+    13:00:00: Balanced after 9 trials
+              11 nodes had demands reduced by a total of 55.73%
+   
+    13:30:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 37.32%
+   
+    14:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 41.88%
+   
+    14:30:00: Balanced after 10 trials
+              12 nodes had demands reduced by a total of 39.86%
+   
+    15:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 44.71%
+   
+    15:30:00: Balanced after 10 trials
+              5 nodes had demands reduced by a total of 52.55%
+   
+    16:00:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 61.19%
+   
+    16:30:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 44.18%
+   
+    17:00:00: Balanced after 12 trials
+              9 nodes had demands reduced by a total of 60.25%
+   
+    17:30:00: Balanced after 11 trials
+              7 nodes had demands reduced by a total of 44.91%
+   
+    18:00:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 39.32%
+   
+    18:30:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 41.89%
+   
+    19:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 54.77%
+   
+    19:30:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 43.97%
+   
+    20:00:00: Balanced after 9 trials
+              11 nodes had demands reduced by a total of 44.80%
+   
+    20:30:00: Balanced after 10 trials
+              6 nodes had demands reduced by a total of 49.22%
+   
+    21:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 40.89%
+   
+    21:30:00: Balanced after 12 trials
+              11 nodes had demands reduced by a total of 48.37%
+   
+    22:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 40.13%
+   
+    22:30:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 39.03%
+   
+    23:00:00: Balanced after 6 trials
+              3 nodes had demands reduced by a total of 42.05%
+   
+    23:30:00: Balanced after 8 trials
+              8 nodes had demands reduced by a total of 47.40%
+   
+    24:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 44.56%
+   
+    24:30:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 51.96%
+   
+    25:00:00: Balanced after 7 trials
+              5 nodes had demands reduced by a total of 28.87%
+   
+    25:30:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 32.91%
+   
+    26:00:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 45.95%
+   
+    26:30:00: Balanced after 12 trials
+              8 nodes had demands reduced by a total of 66.90%
+   
+    27:00:00: Balanced after 9 trials
+              3 nodes had demands reduced by a total of 63.09%
+   
+    27:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 44.92%
+   
+    28:00:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 32.12%
+   
+    28:30:00: Balanced after 8 trials
+              8 nodes had demands reduced by a total of 40.01%
+   
+    29:00:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 50.72%
+   
+    29:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 51.58%
+   
+    30:00:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 62.18%
+   
+    30:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 51.14%
+   
+    31:00:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 46.22%
+   
+    31:30:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 48.01%
+   
+    32:00:00: Balanced after 12 trials
+              11 nodes had demands reduced by a total of 60.44%
+   
+    32:30:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 39.25%
+   
+    33:00:00: Balanced after 5 trials
+              3 nodes had demands reduced by a total of 17.06%
+   
+    33:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 51.86%
+   
+    34:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 42.44%
+   
+    34:30:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 40.58%
+   
+    35:00:00: Balanced after 8 trials
+              5 nodes had demands reduced by a total of 63.04%
+   
+    35:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 37.87%
+   
+    36:00:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 55.40%
+   
+    36:30:00: Balanced after 7 trials
+              6 nodes had demands reduced by a total of 44.51%
+   
+    37:00:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 47.22%
+   
+    37:30:00: Balanced after 12 trials
+              11 nodes had demands reduced by a total of 59.71%
+   
+    38:00:00: Balanced after 8 trials
+              10 nodes had demands reduced by a total of 41.90%
+   
+    38:30:00: Balanced after 6 trials
+              1 node had its demand reduced by a total of 47.31%
+   
+    39:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 48.91%
+   
+    39:30:00: Balanced after 11 trials
+              5 nodes had demands reduced by a total of 37.47%
+   
+    40:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 39.42%
+   
+    40:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 61.11%
+   
+    41:00:00: Balanced after 12 trials
+              8 nodes had demands reduced by a total of 51.56%
+   
+    41:30:00: Balanced after 8 trials
+              8 nodes had demands reduced by a total of 33.40%
+   
+    42:00:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 41.37%
+   
+    42:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 51.77%
+   
+    43:00:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 38.91%
+   
+    43:30:00: Balanced after 8 trials
+              6 nodes had demands reduced by a total of 27.07%
+   
+    44:00:00: Balanced after 8 trials
+              5 nodes had demands reduced by a total of 34.14%
+   
+    44:30:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 55.72%
+   
+    45:00:00: Balanced after 11 trials
+              13 nodes had demands reduced by a total of 59.57%
+   
+    45:30:00: Balanced after 11 trials
+              8 nodes had demands reduced by a total of 51.96%
+   
+    46:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 37.67%
+   
+    46:30:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 39.41%
+   
+    47:00:00: Balanced after 9 trials
+              12 nodes had demands reduced by a total of 33.87%
+   
+    47:30:00: Balanced after 8 trials
+              8 nodes had demands reduced by a total of 35.18%
+   
+    48:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 46.60%
+   
+    48:30:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 29.13%
+   
+    49:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 53.27%
+   
+    49:30:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 63.55%
+   
+    50:00:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 40.55%
+   
+    50:30:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 34.56%
+   
+    51:00:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 50.50%
+   
+    51:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 47.98%
+   
+    52:00:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 45.83%
+   
+    52:30:00: Balanced after 6 trials
+              3 nodes had demands reduced by a total of 31.85%
+   
+    53:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 48.24%
+   
+    53:30:00: Balanced after 8 trials
+              11 nodes had demands reduced by a total of 31.30%
+   
+    54:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 52.85%
+   
+    54:30:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 44.86%
+   
+    55:00:00: Balanced after 11 trials
+              8 nodes had demands reduced by a total of 60.94%
+   
+    55:30:00: Balanced after 8 trials
+              9 nodes had demands reduced by a total of 38.28%
+   
+    56:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 41.09%
+   
+    56:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 53.44%
+   
+    57:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 52.11%
+   
+    57:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 60.87%
+   
+    58:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 54.04%
+   
+    58:30:00: Balanced after 10 trials
+              14 nodes had demands reduced by a total of 38.47%
+   
+    59:00:00: Balanced after 11 trials
+              8 nodes had demands reduced by a total of 58.40%
+   
+    59:30:00: Balanced after 12 trials
+              9 nodes had demands reduced by a total of 45.95%
+   
+    60:00:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 42.55%
+   
+    60:30:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 41.07%
+   
+    61:00:00: Balanced after 11 trials
+              4 nodes had demands reduced by a total of 58.73%
+   
+    61:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 49.68%
+   
+    62:00:00: Balanced after 12 trials
+              6 nodes had demands reduced by a total of 41.93%
+   
+    62:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 55.34%
+   
+    63:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 52.48%
+   
+    63:30:00: Balanced after 8 trials
+              5 nodes had demands reduced by a total of 40.03%
+   
+    64:00:00: Balanced after 10 trials
+              5 nodes had demands reduced by a total of 64.20%
+   
+    64:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 56.64%
+   
+    65:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 49.77%
+   
+    65:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 51.36%
+   
+    66:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 42.27%
+   
+    66:30:00: Balanced after 12 trials
+              10 nodes had demands reduced by a total of 47.28%
+   
+    67:00:00: Balanced after 8 trials
+              6 nodes had demands reduced by a total of 37.44%
+   
+    67:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 53.76%
+   
+    68:00:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 50.23%
+   
+    68:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 48.34%
+   
+    69:00:00: Balanced after 12 trials
+              11 nodes had demands reduced by a total of 54.78%
+   
+    69:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 54.96%
+   
+    70:00:00: Balanced after 8 trials
+              6 nodes had demands reduced by a total of 34.64%
+   
+    70:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 46.92%
+   
+    71:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 46.84%
+   
+    71:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 44.71%
+   
+    72:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 48.34%
+   
+    72:30:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 40.22%
+   
+    73:00:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 37.82%
+   
+    73:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 51.24%
+   
+    74:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 34.48%
+   
+    74:30:00: Balanced after 7 trials
+              2 nodes had demands reduced by a total of 34.72%
+   
+    75:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 47.92%
+   
+    75:30:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 40.85%
+   
+    76:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 39.33%
+   
+    76:30:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 52.67%
+   
+    77:00:00: Balanced after 12 trials
+              12 nodes had demands reduced by a total of 61.45%
+   
+    77:30:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 38.61%
+   
+    78:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 50.46%
+   
+    78:30:00: Balanced after 10 trials
+              5 nodes had demands reduced by a total of 55.71%
+   
+    79:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 46.97%
+   
+    79:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 41.73%
+   
+    80:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 47.41%
+   
+    80:30:00: Balanced after 8 trials
+              6 nodes had demands reduced by a total of 29.11%
+   
+    81:00:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 44.09%
+   
+    81:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 46.06%
+   
+    82:00:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 24.72%
+   
+    82:30:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 46.19%
+   
+    83:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 55.00%
+   
+    83:30:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 32.11%
+   
+    84:00:00: Balanced after 8 trials
+              9 nodes had demands reduced by a total of 27.90%
+   
+    84:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 44.16%
+   
+    85:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 58.78%
+   
+    85:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 54.32%
+   
+    86:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 43.23%
+   
+    86:30:00: Balanced after 11 trials
+              8 nodes had demands reduced by a total of 53.51%
+   
+    87:00:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 58.95%
+   
+    87:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 52.64%
+   
+    88:00:00: Balanced after 13 trials
+              10 nodes had demands reduced by a total of 66.39%
+   
+    88:30:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 43.61%
+   
+    89:00:00: Balanced after 12 trials
+              11 nodes had demands reduced by a total of 70.34%
+   
+    89:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 48.62%
+   
+    90:00:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 52.58%
+   
+    90:30:00: Balanced after 10 trials
+              6 nodes had demands reduced by a total of 49.02%
+   
+    91:00:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 49.29%
+   
+    91:30:00: Balanced after 8 trials
+              3 nodes had demands reduced by a total of 56.16%
+   
+    92:00:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 53.03%
+   
+    92:30:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 45.86%
+   
+    93:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 45.52%
+   
+    93:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 48.97%
+   
+    94:00:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 41.26%
+   
+    94:30:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 44.53%
+   
+    95:00:00: Balanced after 11 trials
+              4 nodes had demands reduced by a total of 55.80%
+   
+    95:30:00: Balanced after 8 trials
+              8 nodes had demands reduced by a total of 28.33%
+   
+    96:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 60.85%
+   
+    96:30:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 35.62%
+   
+    97:00:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 38.78%
+   
+    97:30:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 45.59%
+   
+    98:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 47.16%
+   
+    98:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 39.04%
+   
+    99:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 62.97%
+   
+    99:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 52.99%
+   
+   100:00:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 43.99%
+   
+   100:30:00: Balanced after 8 trials
+              10 nodes had demands reduced by a total of 31.57%
+   
+   101:00:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 52.02%
+   
+   101:30:00: Balanced after 7 trials
+              4 nodes had demands reduced by a total of 48.56%
+   
+   102:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 51.40%
+   
+   102:30:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 46.52%
+   
+   103:00:00: Balanced after 11 trials
+              12 nodes had demands reduced by a total of 46.70%
+   
+   103:30:00: Balanced after 12 trials
+              12 nodes had demands reduced by a total of 56.59%
+   
+   104:00:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 54.11%
+   
+   104:30:00: Balanced after 8 trials
+              6 nodes had demands reduced by a total of 40.84%
+   
+   105:00:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 50.20%
+   
+   105:30:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 47.97%
+   
+   106:00:00: Balanced after 11 trials
+              8 nodes had demands reduced by a total of 56.06%
+   
+   106:30:00: Balanced after 10 trials
+              5 nodes had demands reduced by a total of 49.74%
+   
+   107:00:00: Balanced after 8 trials
+              10 nodes had demands reduced by a total of 31.12%
+   
+   107:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 42.90%
+   
+   108:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 38.54%
+   
+   108:30:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 66.08%
+   
+   109:00:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 49.88%
+   
+   109:30:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 40.54%
+   
+   110:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 38.67%
+   
+   110:30:00: Balanced after 10 trials
+              12 nodes had demands reduced by a total of 42.18%
+   
+   111:00:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 44.73%
+   
+   111:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 45.67%
+   
+   112:00:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 60.76%
+   
+   112:30:00: Balanced after 8 trials
+              5 nodes had demands reduced by a total of 42.25%
+   
+   113:00:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 44.83%
+   
+   113:30:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 38.23%
+   
+   114:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 49.18%
+   
+   114:30:00: Balanced after 10 trials
+              4 nodes had demands reduced by a total of 63.88%
+   
+   115:00:00: Balanced after 7 trials
+              4 nodes had demands reduced by a total of 39.09%
+   
+   115:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 55.80%
+   
+   116:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 48.93%
+   
+   116:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 40.97%
+   
+   117:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 35.84%
+   
+   117:30:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 42.09%
+   
+   118:00:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 40.27%
+   
+   118:30:00: Balanced after 11 trials
+              8 nodes had demands reduced by a total of 53.85%
+   
+   119:00:00: Balanced after 11 trials
+              6 nodes had demands reduced by a total of 30.99%
+   
+   119:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 60.47%
+   
+   120:00:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 53.35%
+   
+   120:30:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 48.22%
+   
+   121:00:00: Balanced after 9 trials
+              11 nodes had demands reduced by a total of 37.62%
+   
+   121:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 33.43%
+   
+   122:00:00: Balanced after 12 trials
+              10 nodes had demands reduced by a total of 53.09%
+   
+   122:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 53.16%
+   
+   123:00:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 45.85%
+   
+   123:30:00: Balanced after 12 trials
+              9 nodes had demands reduced by a total of 54.14%
+   
+   124:00:00: Balanced after 5 trials
+              3 nodes had demands reduced by a total of 13.93%
+   
+   124:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 45.34%
+   
+   125:00:00: Balanced after 12 trials
+              6 nodes had demands reduced by a total of 49.53%
+   
+   125:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 40.77%
+   
+   126:00:00: Balanced after 9 trials
+              11 nodes had demands reduced by a total of 50.84%
+   
+   126:30:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 31.00%
+   
+   127:00:00: Balanced after 8 trials
+              11 nodes had demands reduced by a total of 35.18%
+   
+   127:30:00: Balanced after 11 trials
+              8 nodes had demands reduced by a total of 43.97%
+   
+   128:00:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 61.12%
+   
+   128:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 54.09%
+   
+   129:00:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 44.26%
+   
+   129:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 53.20%
+   
+   130:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 55.11%
+   
+   130:30:00: Balanced after 8 trials
+              6 nodes had demands reduced by a total of 19.50%
+   
+   131:00:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 49.28%
+   
+   131:30:00: Balanced after 7 trials
+              4 nodes had demands reduced by a total of 45.39%
+   
+   132:00:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 56.93%
+   
+   132:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 50.62%
+   
+   133:00:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 57.34%
+   
+   133:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 48.21%
+   
+   134:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 50.21%
+   
+   134:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 47.62%
+   
+   135:00:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 53.36%
+   
+   135:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 36.97%
+   
+   136:00:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 53.65%
+   
+   136:30:00: Balanced after 12 trials
+              10 nodes had demands reduced by a total of 60.25%
+   
+   137:00:00: Balanced after 7 trials
+              3 nodes had demands reduced by a total of 49.87%
+   
+   137:30:00: Balanced after 5 trials
+              2 nodes had demands reduced by a total of 19.73%
+   
+   138:00:00: Balanced after 9 trials
+              11 nodes had demands reduced by a total of 36.68%
+   
+   138:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 54.91%
+   
+   139:00:00: Balanced after 11 trials
+              7 nodes had demands reduced by a total of 38.41%
+   
+   139:30:00: Balanced after 8 trials
+              9 nodes had demands reduced by a total of 29.14%
+   
+   140:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 50.80%
+   
+   140:30:00: Balanced after 8 trials
+              5 nodes had demands reduced by a total of 45.25%
+   
+   141:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 46.39%
+   
+   141:30:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 39.07%
+   
+   142:00:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 48.45%
+   
+   142:30:00: Balanced after 9 trials
+              4 nodes had demands reduced by a total of 48.19%
+   
+   143:00:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 62.67%
+   
+   143:30:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 60.90%
+   
+   144:00:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 48.20%
+   
+   144:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 43.92%
+   
+   145:00:00: Balanced after 9 trials
+              11 nodes had demands reduced by a total of 43.98%
+   
+   145:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 56.91%
+   
+   146:00:00: Balanced after 8 trials
+              5 nodes had demands reduced by a total of 52.51%
+   
+   146:30:00: Balanced after 10 trials
+              4 nodes had demands reduced by a total of 68.66%
+   
+   147:00:00: Balanced after 9 trials
+              11 nodes had demands reduced by a total of 35.50%
+   
+   147:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 50.42%
+   
+   148:00:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 44.29%
+   
+   148:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 58.73%
+   
+   149:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 38.11%
+   
+   149:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 43.90%
+   
+   150:00:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 46.48%
+   
+   150:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 58.22%
+   
+   151:00:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 59.33%
+   
+   151:30:00: Balanced after 11 trials
+              12 nodes had demands reduced by a total of 48.27%
+   
+   152:00:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 53.66%
+   
+   152:30:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 50.47%
+   
+   153:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 45.04%
+   
+   153:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 55.44%
+   
+   154:00:00: Balanced after 8 trials
+              5 nodes had demands reduced by a total of 42.60%
+   
+   154:30:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 39.31%
+   
+   155:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 39.63%
+   
+   155:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 37.86%
+   
+   156:00:00: Balanced after 12 trials
+              9 nodes had demands reduced by a total of 64.11%
+   
+   156:30:00: Balanced after 10 trials
+              6 nodes had demands reduced by a total of 41.00%
+   
+   157:00:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 58.30%
+   
+   157:30:00: Balanced after 9 trials
+              11 nodes had demands reduced by a total of 46.55%
+   
+   158:00:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 66.79%
+   
+   158:30:00: Balanced after 10 trials
+              6 nodes had demands reduced by a total of 58.20%
+   
+   159:00:00: Balanced after 8 trials
+              8 nodes had demands reduced by a total of 35.50%
+   
+   159:30:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 59.41%
+   
+   160:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 41.30%
+   
+   160:30:00: Balanced after 7 trials
+              1 node had its demand reduced by a total of 38.14%
+   
+   161:00:00: Balanced after 7 trials
+              3 nodes had demands reduced by a total of 41.77%
+   
+   161:30:00: Balanced after 11 trials
+              13 nodes had demands reduced by a total of 43.66%
+   
+   162:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 54.56%
+   
+   162:30:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 41.59%
+   
+   163:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 52.08%
+   
+   163:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 45.28%
+   
+   164:00:00: Balanced after 11 trials
+              8 nodes had demands reduced by a total of 51.25%
+   
+   164:30:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 56.14%
+   
+   165:00:00: Balanced after 7 trials
+              7 nodes had demands reduced by a total of 29.29%
+   
+   165:30:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 55.90%
+   
+   166:00:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 49.28%
+   
+   166:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 43.22%
+   
+   167:00:00: Balanced after 8 trials
+              5 nodes had demands reduced by a total of 49.34%
+   
+   167:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 72.04%
+   
+   168:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 34.99%
+   
+   168:30:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 43.45%
+   
+   169:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 51.00%
+   
+   169:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 63.79%
+   
+   170:00:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 48.70%
+   
+   170:30:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 48.64%
+   
+   171:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 39.50%
+   
+   171:30:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 45.19%
+   
+   172:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 35.11%
+   
+   172:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 45.26%
+   
+   173:00:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 39.32%
+   
+   173:30:00: Balanced after 11 trials
+              7 nodes had demands reduced by a total of 33.54%
+   
+   174:00:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 42.78%
+   
+   174:30:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 62.62%
+   
+   175:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 37.11%
+   
+   175:30:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 48.53%
+   
+   176:00:00: Balanced after 10 trials
+              6 nodes had demands reduced by a total of 69.73%
+   
+   176:30:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 39.53%
+   
+   177:00:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 50.70%
+   
+   177:30:00: Balanced after 7 trials
+              7 nodes had demands reduced by a total of 18.70%
+   
+   178:00:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 43.54%
+   
+   178:30:00: Balanced after 10 trials
+              12 nodes had demands reduced by a total of 41.05%
+   
+   179:00:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 40.04%
+   
+   179:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 50.20%
+   
+   180:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 40.46%
+   
+   180:30:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 45.14%
+   
+   181:00:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 38.07%
+   
+   181:30:00: Balanced after 8 trials
+              5 nodes had demands reduced by a total of 31.30%
+   
+   182:00:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 51.00%
+   
+   182:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 67.87%
+   
+   183:00:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 32.26%
+   
+   183:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 40.01%
+   
+   184:00:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 60.55%
+   
+   184:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 46.36%
+   
+   185:00:00: Balanced after 10 trials
+              12 nodes had demands reduced by a total of 44.88%
+   
+   185:30:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 39.25%
+   
+   186:00:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 46.72%
+   
+   186:30:00: Balanced after 8 trials
+              5 nodes had demands reduced by a total of 44.28%
+   
+   187:00:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 50.21%
+   
+   187:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 52.04%
+   
+   188:00:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 36.39%
+   
+   188:30:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 54.87%
+   
+   189:00:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 43.62%
+   
+   189:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 47.84%
+   
+   190:00:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 61.48%
+   
+   190:30:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 43.87%
+   
+   191:00:00: Balanced after 7 trials
+              8 nodes had demands reduced by a total of 24.56%
+   
+   191:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 41.06%
+   
+   192:00:00: Balanced after 12 trials
+              11 nodes had demands reduced by a total of 43.88%
+   
+   192:30:00: Balanced after 9 trials
+              4 nodes had demands reduced by a total of 56.30%
+   
+   193:00:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 43.73%
+   
+   193:30:00: Balanced after 12 trials
+              12 nodes had demands reduced by a total of 53.43%
+   
+   194:00:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 41.46%
+   
+   194:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 44.83%
+   
+   195:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 52.76%
+   
+   195:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 55.36%
+   
+   196:00:00: Balanced after 13 trials
+              11 nodes had demands reduced by a total of 56.48%
+   
+   196:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 50.83%
+   
+   197:00:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 39.34%
+   
+   197:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 54.46%
+   
+   198:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 42.83%
+   
+   198:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 44.97%
+   
+   199:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 37.26%
+   
+   199:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 47.35%
+   
+   200:00:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 44.42%
+   
+   200:30:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 59.35%
+   
+   201:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 36.36%
+   
+   201:30:00: Balanced after 7 trials
+              8 nodes had demands reduced by a total of 28.71%
+   
+   202:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 43.06%
+   
+   202:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 70.74%
+   
+   203:00:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 56.95%
+   
+   203:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 62.08%
+   
+   204:00:00: Balanced after 12 trials
+              9 nodes had demands reduced by a total of 64.13%
+   
+   204:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 42.03%
+   
+   205:00:00: Balanced after 11 trials
+              12 nodes had demands reduced by a total of 55.61%
+   
+   205:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 42.07%
+   
+   206:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 33.53%
+   
+   206:30:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 49.83%
+   
+   207:00:00: Balanced after 6 trials
+              3 nodes had demands reduced by a total of 23.88%
+   
+   207:30:00: Balanced after 7 trials
+              6 nodes had demands reduced by a total of 26.64%
+   
+   208:00:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 54.56%
+   
+   208:30:00: Balanced after 8 trials
+              5 nodes had demands reduced by a total of 36.43%
+   
+   209:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 50.07%
+   
+   209:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 53.33%
+   
+   210:00:00: Balanced after 7 trials
+              4 nodes had demands reduced by a total of 43.91%
+   
+   210:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 49.74%
+   
+   211:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 50.37%
+   
+   211:30:00: Balanced after 12 trials
+              11 nodes had demands reduced by a total of 55.32%
+   
+   212:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 47.96%
+   
+   212:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 26.29%
+   
+   213:00:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 39.04%
+   
+   213:30:00: Balanced after 12 trials
+              11 nodes had demands reduced by a total of 59.06%
+   
+   214:00:00: Balanced after 11 trials
+              12 nodes had demands reduced by a total of 39.14%
+   
+   214:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 45.39%
+   
+   215:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 40.42%
+   
+   215:30:00: Balanced after 12 trials
+              10 nodes had demands reduced by a total of 42.15%
+   
+   216:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 46.45%
+   
+   216:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 55.84%
+   
+   217:00:00: Balanced after 11 trials
+              6 nodes had demands reduced by a total of 69.34%
+   
+   217:30:00: Balanced after 8 trials
+              5 nodes had demands reduced by a total of 41.02%
+   
+   218:00:00: Balanced after 8 trials
+              10 nodes had demands reduced by a total of 43.93%
+   
+   218:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 41.79%
+   
+   219:00:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 48.18%
+   
+   219:30:00: Balanced after 7 trials
+              4 nodes had demands reduced by a total of 38.59%
+   
+   220:00:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 48.47%
+   
+   220:30:00: Balanced after 8 trials
+              6 nodes had demands reduced by a total of 27.66%
+   
+   221:00:00: Balanced after 11 trials
+              12 nodes had demands reduced by a total of 52.70%
+   
+   221:30:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 41.80%
+   
+   222:00:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 48.91%
+   
+   222:30:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 32.49%
+   
+   223:00:00: Balanced after 9 trials
+              4 nodes had demands reduced by a total of 41.45%
+   
+   223:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 58.28%
+   
+   224:00:00: Balanced after 12 trials
+              12 nodes had demands reduced by a total of 44.76%
+   
+   224:30:00: Balanced after 12 trials
+              10 nodes had demands reduced by a total of 50.13%
+   
+   225:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 48.47%
+   
+   225:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 51.36%
+   
+   226:00:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 38.96%
+   
+   226:30:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 39.59%
+   
+   227:00:00: Balanced after 7 trials
+              7 nodes had demands reduced by a total of 21.97%
+   
+   227:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 43.05%
+   
+   228:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 49.72%
+   
+   228:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 49.18%
+   
+   229:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 36.21%
+   
+   229:30:00: Balanced after 12 trials
+              9 nodes had demands reduced by a total of 54.26%
+   
+   230:00:00: Balanced after 11 trials
+              8 nodes had demands reduced by a total of 59.19%
+   
+   230:30:00: Balanced after 8 trials
+              10 nodes had demands reduced by a total of 29.91%
+   
+   231:00:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 41.17%
+   
+   231:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 39.76%
+   
+   232:00:00: Balanced after 12 trials
+              11 nodes had demands reduced by a total of 61.49%
+   
+   232:30:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 39.42%
+   
+   233:00:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 31.08%
+   
+   233:30:00: Balanced after 12 trials
+              10 nodes had demands reduced by a total of 64.27%
+   
+   234:00:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 53.19%
+   
+   234:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 39.24%
+   
+   235:00:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 50.73%
+   
+   235:30:00: Balanced after 7 trials
+              1 node had its demand reduced by a total of 22.27%
+   
+   236:00:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 43.26%
+   
+   236:30:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 52.12%
+   
+   237:00:00: Balanced after 8 trials
+              9 nodes had demands reduced by a total of 36.19%
+   
+   237:30:00: Balanced after 8 trials
+              3 nodes had demands reduced by a total of 61.44%
+   
+   238:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 38.03%
+   
+   238:30:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 39.37%
+   
+   239:00:00: Balanced after 8 trials
+              11 nodes had demands reduced by a total of 24.33%
+   
+   239:30:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 49.04%
+   
+   240:00:00: Balanced after 8 trials
+              8 nodes had demands reduced by a total of 42.83%
+   
+   240:30:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 53.94%
+   
+   241:00:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 68.22%
+   
+   241:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 49.29%
+   
+   242:00:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 29.87%
+   
+   242:30:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 51.74%
+   
+   243:00:00: Balanced after 7 trials
+              8 nodes had demands reduced by a total of 32.12%
+   
+   243:30:00: Balanced after 9 trials
+              3 nodes had demands reduced by a total of 57.41%
+   
+   244:00:00: Balanced after 8 trials
+              6 nodes had demands reduced by a total of 38.30%
+   
+   244:30:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 30.69%
+   
+   245:00:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 44.39%
+   
+   245:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 37.29%
+   
+   246:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 45.39%
+   
+   246:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 41.30%
+   
+   247:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 39.18%
+   
+   247:30:00: Balanced after 8 trials
+              10 nodes had demands reduced by a total of 40.45%
+   
+   248:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 46.99%
+   
+   248:30:00: Balanced after 12 trials
+              9 nodes had demands reduced by a total of 44.61%
+   
+   249:00:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 49.49%
+   
+   249:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 48.55%
+   
+   250:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 43.43%
+   
+   250:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 52.80%
+   
+   251:00:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 45.00%
+   
+   251:30:00: Balanced after 12 trials
+              10 nodes had demands reduced by a total of 55.28%
+   
+   252:00:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 46.59%
+   
+   252:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 62.44%
+   
+   253:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 57.92%
+   
+   253:30:00: Balanced after 9 trials
+              11 nodes had demands reduced by a total of 35.56%
+   
+   254:00:00: Balanced after 6 trials
+              3 nodes had demands reduced by a total of 24.61%
+   
+   254:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 42.03%
+   
+   255:00:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 48.96%
+   
+   255:30:00: Balanced after 9 trials
+              11 nodes had demands reduced by a total of 44.50%
+   
+   256:00:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 56.29%
+   
+   256:30:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 33.55%
+   
+   257:00:00: Balanced after 8 trials
+              8 nodes had demands reduced by a total of 37.57%
+   
+   257:30:00: Balanced after 10 trials
+              6 nodes had demands reduced by a total of 65.85%
+   
+   258:00:00: Balanced after 8 trials
+              5 nodes had demands reduced by a total of 29.96%
+   
+   258:30:00: Balanced after 10 trials
+              6 nodes had demands reduced by a total of 51.84%
+   
+   259:00:00: Balanced after 12 trials
+              11 nodes had demands reduced by a total of 61.09%
+   
+   259:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 56.07%
+   
+   260:00:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 47.86%
+   
+   260:30:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 44.60%
+   
+   261:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 55.78%
+   
+   261:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 43.47%
+   
+   262:00:00: Balanced after 10 trials
+              6 nodes had demands reduced by a total of 57.12%
+   
+   262:30:00: Balanced after 9 trials
+              11 nodes had demands reduced by a total of 38.51%
+   
+   263:00:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 50.39%
+   
+   263:30:00: Balanced after 11 trials
+              12 nodes had demands reduced by a total of 30.01%
+   
+   264:00:00: Balanced after 10 trials
+              5 nodes had demands reduced by a total of 48.31%
+   
+   264:30:00: Balanced after 9 trials
+              4 nodes had demands reduced by a total of 66.90%
+   
+   265:00:00: Balanced after 10 trials
+              12 nodes had demands reduced by a total of 36.82%
+   
+   265:30:00: Balanced after 8 trials
+              8 nodes had demands reduced by a total of 43.51%
+   
+   266:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 32.63%
+   
+   266:30:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 56.55%
+   
+   267:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 42.31%
+   
+   267:30:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 42.11%
+   
+   268:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 39.10%
+   
+   268:30:00: Balanced after 8 trials
+              8 nodes had demands reduced by a total of 42.56%
+   
+   269:00:00: Balanced after 8 trials
+              3 nodes had demands reduced by a total of 54.29%
+   
+   269:30:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 42.65%
+   
+   270:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 38.23%
+   
+   270:30:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 53.34%
+   
+   271:00:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 51.52%
+   
+   271:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 44.15%
+   
+   272:00:00: Balanced after 8 trials
+              6 nodes had demands reduced by a total of 40.27%
+   
+   272:30:00: Balanced after 11 trials
+              12 nodes had demands reduced by a total of 45.62%
+   
+   273:00:00: Balanced after 12 trials
+              7 nodes had demands reduced by a total of 55.13%
+   
+   273:30:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 41.64%
+   
+   274:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 39.06%
+   
+   274:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 47.15%
+   
+   275:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 46.85%
+   
+   275:30:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 41.70%
+   
+   276:00:00: Balanced after 11 trials
+              8 nodes had demands reduced by a total of 46.30%
+   
+   276:30:00: Balanced after 9 trials
+              4 nodes had demands reduced by a total of 52.19%
+   
+   277:00:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 46.07%
+   
+   277:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 45.61%
+   
+   278:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 52.18%
+   
+   278:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 40.34%
+   
+   279:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 59.65%
+   
+   279:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 48.33%
+   
+   280:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 39.26%
+   
+   280:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 56.15%
+   
+   281:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 50.44%
+   
+   281:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 45.49%
+   
+   282:00:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 50.78%
+   
+   282:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 48.42%
+   
+   283:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 57.36%
+   
+   283:30:00: Balanced after 7 trials
+              4 nodes had demands reduced by a total of 51.10%
+   
+   284:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 53.04%
+   
+   284:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 62.53%
+   
+   285:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 50.02%
+   
+   285:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 35.54%
+   
+   286:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 39.05%
+   
+   286:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 40.69%
+   
+   287:00:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 36.05%
+   
+   287:30:00: Balanced after 9 trials
+              3 nodes had demands reduced by a total of 62.14%
+   
+   288:00:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 51.06%
+   
+   288:30:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 56.62%
+   
+   289:00:00: Balanced after 8 trials
+              5 nodes had demands reduced by a total of 34.77%
+   
+   289:30:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 52.07%
+   
+   290:00:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 50.19%
+   
+   290:30:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 51.11%
+   
+   291:00:00: Balanced after 8 trials
+              8 nodes had demands reduced by a total of 46.99%
+   
+   291:30:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 49.90%
+   
+   292:00:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 52.32%
+   
+   292:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 62.82%
+   
+   293:00:00: Balanced after 11 trials
+              7 nodes had demands reduced by a total of 49.78%
+   
+   293:30:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 39.40%
+   
+   294:00:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 59.51%
+   
+   294:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 42.43%
+   
+   295:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 39.15%
+   
+   295:30:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 42.12%
+   
+   296:00:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 56.60%
+   
+   296:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 48.40%
+   
+   297:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 44.37%
+   
+   297:30:00: Balanced after 11 trials
+              8 nodes had demands reduced by a total of 62.64%
+   
+   298:00:00: Balanced after 12 trials
+              11 nodes had demands reduced by a total of 60.96%
+   
+   298:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 52.83%
+   
+   299:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 49.64%
+   
+   299:30:00: Balanced after 12 trials
+              9 nodes had demands reduced by a total of 64.96%
+   
+   300:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 43.93%
+   
+   300:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 37.63%
+   
+   301:00:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 40.37%
+   
+   301:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 37.69%
+   
+   302:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 68.69%
+   
+   302:30:00: Balanced after 11 trials
+              8 nodes had demands reduced by a total of 34.95%
+   
+   303:00:00: Balanced after 8 trials
+              5 nodes had demands reduced by a total of 46.45%
+   
+   303:30:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 52.60%
+   
+   304:00:00: Balanced after 8 trials
+              10 nodes had demands reduced by a total of 28.52%
+   
+   304:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 46.86%
+   
+   305:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 56.21%
+   
+   305:30:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 41.86%
+   
+   306:00:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 35.66%
+   
+   306:30:00: Balanced after 11 trials
+              12 nodes had demands reduced by a total of 46.76%
+   
+   307:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 47.21%
+   
+   307:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 38.51%
+   
+   308:00:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 49.03%
+   
+   308:30:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 43.89%
+   
+   309:00:00: Balanced after 8 trials
+              6 nodes had demands reduced by a total of 42.00%
+   
+   309:30:00: Balanced after 12 trials
+              11 nodes had demands reduced by a total of 69.37%
+   
+   310:00:00: Balanced after 12 trials
+              12 nodes had demands reduced by a total of 56.29%
+   
+   310:30:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 63.74%
+   
+   311:00:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 56.57%
+   
+   311:30:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 44.47%
+   
+   312:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 49.93%
+   
+   312:30:00: Balanced after 12 trials
+              9 nodes had demands reduced by a total of 47.32%
+   
+   313:00:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 34.88%
+   
+   313:30:00: Balanced after 11 trials
+              7 nodes had demands reduced by a total of 47.96%
+   
+   314:00:00: Balanced after 7 trials
+              8 nodes had demands reduced by a total of 28.65%
+   
+   314:30:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 34.98%
+   
+   315:00:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 40.28%
+   
+   315:30:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 56.08%
+   
+   316:00:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 56.10%
+   
+   316:30:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 58.84%
+   
+   317:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 41.01%
+   
+   317:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 41.09%
+   
+   318:00:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 57.73%
+   
+   318:30:00: Balanced after 11 trials
+              6 nodes had demands reduced by a total of 46.42%
+   
+   319:00:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 58.52%
+   
+   319:30:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 44.09%
+   
+   320:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 47.90%
+   
+   320:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 38.61%
+   
+   321:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 46.47%
+   
+   321:30:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 50.01%
+   
+   322:00:00: Balanced after 11 trials
+              5 nodes had demands reduced by a total of 62.37%
+   
+   322:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 47.94%
+   
+   323:00:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 36.66%
+   
+   323:30:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 53.87%
+   
+   324:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 34.91%
+   
+   324:30:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 53.90%
+   
+   325:00:00: Balanced after 8 trials
+              8 nodes had demands reduced by a total of 26.97%
+   
+   325:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 32.01%
+   
+   326:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 39.85%
+   
+   326:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 53.68%
+   
+   327:00:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 39.31%
+   
+   327:30:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 52.91%
+   
+   328:00:00: Balanced after 10 trials
+              6 nodes had demands reduced by a total of 67.64%
+   
+   328:30:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 40.53%
+   
+   329:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 38.40%
+   
+   329:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 29.98%
+   
+   330:00:00: Balanced after 7 trials
+              2 nodes had demands reduced by a total of 41.28%
+   
+   330:30:00: Balanced after 12 trials
+              9 nodes had demands reduced by a total of 52.65%
+   
+   331:00:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 34.94%
+   
+   331:30:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 52.84%
+   
+   332:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 57.56%
+   
+   332:30:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 42.74%
+   
+   333:00:00: Balanced after 11 trials
+              12 nodes had demands reduced by a total of 47.90%
+   
+   333:30:00: Balanced after 8 trials
+              9 nodes had demands reduced by a total of 44.27%
+   
+   334:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 61.08%
+   
+   334:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 54.80%
+   
+   335:00:00: Balanced after 10 trials
+              5 nodes had demands reduced by a total of 65.74%
+   
+   335:30:00: Balanced after 7 trials
+              4 nodes had demands reduced by a total of 25.39%
+   
+   336:00:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 51.37%
+   
+   336:30:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 31.11%
+   
+   337:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 43.40%
+   
+   337:30:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 43.38%
+   
+   338:00:00: Balanced after 8 trials
+              6 nodes had demands reduced by a total of 34.59%
+   
+   338:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 54.32%
+   
+   339:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 38.04%
+   
+   339:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 47.42%
+   
+   340:00:00: Balanced after 8 trials
+              5 nodes had demands reduced by a total of 40.13%
+   
+   340:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 43.74%
+   
+   341:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 56.09%
+   
+   341:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 64.15%
+   
+   342:00:00: Balanced after 10 trials
+              5 nodes had demands reduced by a total of 56.25%
+   
+   342:30:00: Balanced after 12 trials
+              11 nodes had demands reduced by a total of 51.03%
+   
+   343:00:00: Balanced after 8 trials
+              8 nodes had demands reduced by a total of 32.90%
+   
+   343:30:00: Balanced after 10 trials
+              6 nodes had demands reduced by a total of 53.97%
+   
+   344:00:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 44.54%
+   
+   344:30:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 41.46%
+   
+   345:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 39.65%
+   
+   345:30:00: Balanced after 9 trials
+              11 nodes had demands reduced by a total of 35.10%
+   
+   346:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 44.35%
+   
+   346:30:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 50.92%
+   
+   347:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 44.25%
+   
+   347:30:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 51.02%
+   
+   348:00:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 34.02%
+   
+   348:30:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 55.88%
+   
+   349:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 53.77%
+   
+   349:30:00: Balanced after 11 trials
+              7 nodes had demands reduced by a total of 60.45%
+   
+   350:00:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 43.69%
+   
+   350:30:00: Balanced after 9 trials
+              11 nodes had demands reduced by a total of 49.04%
+   
+   351:00:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 58.99%
+   
+   351:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 51.40%
+   
+   352:00:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 54.81%
+   
+   352:30:00: Balanced after 8 trials
+              10 nodes had demands reduced by a total of 35.63%
+   
+   353:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 55.02%
+   
+   353:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 54.33%
+   
+   354:00:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 22.54%
+   
+   354:30:00: Balanced after 8 trials
+              6 nodes had demands reduced by a total of 47.98%
+   
+   355:00:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 44.38%
+   
+   355:30:00: Balanced after 7 trials
+              4 nodes had demands reduced by a total of 50.10%
+   
+   356:00:00: Balanced after 9 trials
+              11 nodes had demands reduced by a total of 38.30%
+   
+   356:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 33.76%
+   
+   357:00:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 48.51%
+   
+   357:30:00: Balanced after 11 trials
+              6 nodes had demands reduced by a total of 56.53%
+   
+   358:00:00: Balanced after 9 trials
+              4 nodes had demands reduced by a total of 45.75%
+   
+   358:30:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 64.58%
+   
+   359:00:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 47.52%
+   
+   359:30:00: Balanced after 6 trials
+              1 node had its demand reduced by a total of 46.56%
+   
+   360:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 52.07%
+   
+   360:30:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 45.43%
+   
+   361:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 30.47%
+   
+   361:30:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 44.89%
+   
+   362:00:00: Balanced after 12 trials
+              10 nodes had demands reduced by a total of 64.11%
+   
+   362:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 49.58%
+   
+   363:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 28.40%
+   
+   363:30:00: Balanced after 7 trials
+              7 nodes had demands reduced by a total of 26.73%
+   
+   364:00:00: Balanced after 10 trials
+              6 nodes had demands reduced by a total of 55.55%
+   
+   364:30:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 42.88%
+   
+   365:00:00: Balanced after 10 trials
+              5 nodes had demands reduced by a total of 53.51%
+   
+   365:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 34.69%
+   
+   366:00:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 54.27%
+   
+   366:30:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 54.35%
+   
+   367:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 48.73%
+   
+   367:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 58.51%
+   
+   368:00:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 58.58%
+   
+   368:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 47.25%
+   
+   369:00:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 45.13%
+   
+   369:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 37.00%
+   
+   370:00:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 59.73%
+   
+   370:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 44.48%
+   
+   371:00:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 57.59%
+   
+   371:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 61.90%
+   
+   372:00:00: Balanced after 6 trials
+              4 nodes had demands reduced by a total of 25.86%
+   
+   372:30:00: Balanced after 11 trials
+              8 nodes had demands reduced by a total of 58.55%
+   
+   373:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 42.22%
+   
+   373:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 32.17%
+   
+   374:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 36.93%
+   
+   374:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 44.65%
+   
+   375:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 40.50%
+   
+   375:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 51.86%
+   
+   376:00:00: Balanced after 11 trials
+              8 nodes had demands reduced by a total of 57.81%
+   
+   376:30:00: Balanced after 7 trials
+              5 nodes had demands reduced by a total of 47.47%
+   
+   377:00:00: Balanced after 9 trials
+              11 nodes had demands reduced by a total of 38.81%
+   
+   377:30:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 46.72%
+   
+   378:00:00: Balanced after 8 trials
+              6 nodes had demands reduced by a total of 47.41%
+   
+   378:30:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 65.91%
+   
+   379:00:00: Balanced after 12 trials
+              11 nodes had demands reduced by a total of 58.60%
+   
+   379:30:00: Balanced after 8 trials
+              8 nodes had demands reduced by a total of 29.93%
+   
+   380:00:00: Balanced after 8 trials
+              9 nodes had demands reduced by a total of 27.30%
+   
+   380:30:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 55.28%
+   
+   381:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 37.85%
+   
+   381:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 58.64%
+   
+   382:00:00: Balanced after 8 trials
+              6 nodes had demands reduced by a total of 21.80%
+   
+   382:30:00: Balanced after 12 trials
+              10 nodes had demands reduced by a total of 67.94%
+   
+   383:00:00: Balanced after 11 trials
+              12 nodes had demands reduced by a total of 57.18%
+   
+   383:30:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 50.50%
+   
+   384:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 44.11%
+   
+   384:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 58.00%
+   
+   385:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 51.17%
+   
+   385:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 45.36%
+   
+   386:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 36.94%
+   
+   386:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 47.26%
+   
+   387:00:00: Balanced after 8 trials
+              5 nodes had demands reduced by a total of 50.01%
+   
+   387:30:00: Balanced after 10 trials
+              5 nodes had demands reduced by a total of 76.05%
+   
+   388:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 55.34%
+   
+   388:30:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 37.51%
+   
+   389:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 47.89%
+   
+   389:30:00: Balanced after 11 trials
+              8 nodes had demands reduced by a total of 59.56%
+   
+   390:00:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 48.26%
+   
+   390:30:00: Balanced after 11 trials
+              8 nodes had demands reduced by a total of 58.29%
+   
+   391:00:00: Balanced after 12 trials
+              13 nodes had demands reduced by a total of 49.76%
+   
+   391:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 53.43%
+   
+   392:00:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 61.12%
+   
+   392:30:00: Balanced after 12 trials
+              8 nodes had demands reduced by a total of 48.39%
+   
+   393:00:00: Balanced after 11 trials
+              7 nodes had demands reduced by a total of 59.91%
+   
+   393:30:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 42.38%
+   
+   394:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 39.80%
+   
+   394:30:00: Balanced after 11 trials
+              12 nodes had demands reduced by a total of 42.63%
+   
+   395:00:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 49.21%
+   
+   395:30:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 28.02%
+   
+   396:00:00: Balanced after 8 trials
+              6 nodes had demands reduced by a total of 35.04%
+   
+   396:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 57.97%
+   
+   397:00:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 40.43%
+   
+   397:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 54.43%
+   
+   398:00:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 56.87%
+   
+   398:30:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 60.07%
+   
+   399:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 41.07%
+   
+   399:30:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 54.95%
+   
+   400:00:00: Balanced after 8 trials
+              10 nodes had demands reduced by a total of 33.54%
+   
+   400:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 34.69%
+   
+   401:00:00: Balanced after 11 trials
+              13 nodes had demands reduced by a total of 46.21%
+   
+   401:30:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 62.98%
+   
+   402:00:00: Balanced after 7 trials
+              4 nodes had demands reduced by a total of 42.28%
+   
+   402:30:00: Balanced after 10 trials
+              5 nodes had demands reduced by a total of 52.92%
+   
+   403:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 35.34%
+   
+   403:30:00: Balanced after 6 trials
+              3 nodes had demands reduced by a total of 45.25%
+   
+   404:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 56.06%
+   
+   404:30:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 59.50%
+   
+   405:00:00: Balanced after 8 trials
+              9 nodes had demands reduced by a total of 28.18%
+   
+   405:30:00: Balanced after 7 trials
+              4 nodes had demands reduced by a total of 38.53%
+   
+   406:00:00: Balanced after 10 trials
+              6 nodes had demands reduced by a total of 64.77%
+   
+   406:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 45.81%
+   
+   407:00:00: Balanced after 11 trials
+              5 nodes had demands reduced by a total of 50.95%
+   
+   407:30:00: Balanced after 12 trials
+              12 nodes had demands reduced by a total of 45.42%
+   
+   408:00:00: Balanced after 8 trials
+              6 nodes had demands reduced by a total of 35.48%
+   
+   408:30:00: Balanced after 8 trials
+              9 nodes had demands reduced by a total of 41.13%
+   
+   409:00:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 45.84%
+   
+   409:30:00: Balanced after 11 trials
+              8 nodes had demands reduced by a total of 49.53%
+   
+   410:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 47.57%
+   
+   410:30:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 37.84%
+   
+   411:00:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 55.16%
+   
+   411:30:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 46.39%
+   
+   412:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 49.34%
+   
+   412:30:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 35.36%
+   
+   413:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 44.76%
+   
+   413:30:00: Balanced after 7 trials
+              4 nodes had demands reduced by a total of 44.02%
+   
+   414:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 42.03%
+   
+   414:30:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 58.21%
+   
+   415:00:00: Balanced after 7 trials
+              5 nodes had demands reduced by a total of 47.62%
+   
+   415:30:00: Balanced after 8 trials
+              8 nodes had demands reduced by a total of 29.07%
+   
+   416:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 40.26%
+   
+   416:30:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 48.96%
+   
+   417:00:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 54.77%
+   
+   417:30:00: Balanced after 8 trials
+              7 nodes had demands reduced by a total of 36.24%
+   
+   418:00:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 42.74%
+   
+   418:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 26.42%
+   
+   419:00:00: Balanced after 8 trials
+              9 nodes had demands reduced by a total of 35.92%
+   
+   419:30:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 45.58%
+   
+   420:00:00: Balanced after 7 trials
+              2 nodes had demands reduced by a total of 66.53%
+   
+   420:30:00: Balanced after 9 trials
+              11 nodes had demands reduced by a total of 43.00%
+   
+   421:00:00: Balanced after 9 trials
+              2 nodes had demands reduced by a total of 48.32%
+   
+   421:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 54.31%
+   
+   422:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 49.59%
+   
+   422:30:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 40.32%
+   
+   423:00:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 46.36%
+   
+   423:30:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 53.16%
+   
+   424:00:00: Balanced after 8 trials
+              10 nodes had demands reduced by a total of 31.00%
+   
+   424:30:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 43.04%
+   
+   425:00:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 37.75%
+   
+   425:30:00: Balanced after 8 trials
+              3 nodes had demands reduced by a total of 58.42%
+   
+   426:00:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 53.86%
+   
+   426:30:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 39.92%
+   
+   427:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 48.26%
+   
+   427:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 54.24%
+   
+   428:00:00: Balanced after 8 trials
+              8 nodes had demands reduced by a total of 28.30%
+   
+   428:30:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 57.39%
+   
+   429:00:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 55.76%
+   
+   429:30:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 46.67%
+   
+   430:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 58.95%
+   
+   430:30:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 38.59%
+   
+   431:00:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 51.45%
+   
+   431:30:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 48.56%
+   
+   432:00:00: Balanced after 11 trials
+              5 nodes had demands reduced by a total of 53.36%
+   
+   432:30:00: Balanced after 11 trials
+              7 nodes had demands reduced by a total of 43.61%
+   
+   433:00:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 44.72%
+   
+   433:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 44.39%
+   
+   434:00:00: Balanced after 11 trials
+              6 nodes had demands reduced by a total of 45.74%
+   
+   434:30:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 50.32%
+   
+   435:00:00: Balanced after 13 trials
+              10 nodes had demands reduced by a total of 52.21%
+   
+   435:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 58.10%
+   
+   436:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 44.68%
+   
+   436:30:00: Balanced after 10 trials
+              6 nodes had demands reduced by a total of 52.89%
+   
+   437:00:00: Balanced after 11 trials
+              12 nodes had demands reduced by a total of 51.11%
+   
+   437:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 48.29%
+   
+   438:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 48.19%
+   
+   438:30:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 37.44%
+   
+   439:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 52.08%
+   
+   439:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 48.77%
+   
+   440:00:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 41.94%
+   
+   440:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 50.37%
+   
+   441:00:00: Balanced after 8 trials
+              6 nodes had demands reduced by a total of 52.80%
+   
+   441:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 63.86%
+   
+   442:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 46.11%
+   
+   442:30:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 63.46%
+   
+   443:00:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 49.83%
+   
+   443:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 51.49%
+   
+   444:00:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 54.96%
+   
+   444:30:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 40.41%
+   
+   445:00:00: Balanced after 8 trials
+              8 nodes had demands reduced by a total of 25.56%
+   
+   445:30:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 37.90%
+   
+   446:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 57.09%
+   
+   446:30:00: Balanced after 8 trials
+              6 nodes had demands reduced by a total of 34.72%
+   
+   447:00:00: Balanced after 10 trials
+              5 nodes had demands reduced by a total of 66.10%
+   
+   447:30:00: Balanced after 12 trials
+              10 nodes had demands reduced by a total of 55.02%
+   
+   448:00:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 56.75%
+   
+   448:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 49.43%
+   
+   449:00:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 45.18%
+   
+   449:30:00: Balanced after 12 trials
+              12 nodes had demands reduced by a total of 48.25%
+   
+   450:00:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 42.76%
+   
+   450:30:00: Balanced after 8 trials
+              10 nodes had demands reduced by a total of 33.67%
+   
+   451:00:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 49.69%
+   
+   451:30:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 42.80%
+   
+   452:00:00: Balanced after 8 trials
+              5 nodes had demands reduced by a total of 51.77%
+   
+   452:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 48.97%
+   
+   453:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 48.08%
+   
+   453:30:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 61.49%
+   
+   454:00:00: Balanced after 11 trials
+              7 nodes had demands reduced by a total of 58.65%
+   
+   454:30:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 60.83%
+   
+   455:00:00: Balanced after 10 trials
+              6 nodes had demands reduced by a total of 61.77%
+   
+   455:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 43.16%
+   
+   456:00:00: Balanced after 7 trials
+              2 nodes had demands reduced by a total of 29.23%
+   
+   456:30:00: Balanced after 7 trials
+              4 nodes had demands reduced by a total of 42.76%
+   
+   457:00:00: Balanced after 8 trials
+              5 nodes had demands reduced by a total of 47.63%
+   
+   457:30:00: Balanced after 8 trials
+              10 nodes had demands reduced by a total of 35.08%
+   
+   458:00:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 67.57%
+   
+   458:30:00: Balanced after 7 trials
+              5 nodes had demands reduced by a total of 33.21%
+   
+   459:00:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 40.61%
+   
+   459:30:00: Balanced after 10 trials
+              12 nodes had demands reduced by a total of 43.75%
+   
+   460:00:00: Balanced after 12 trials
+              11 nodes had demands reduced by a total of 68.39%
+   
+   460:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 55.51%
+   
+   461:00:00: Balanced after 10 trials
+              6 nodes had demands reduced by a total of 53.45%
+   
+   461:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 49.58%
+   
+   462:00:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 44.19%
+   
+   462:30:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 55.03%
+   
+   463:00:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 42.97%
+   
+   463:30:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 43.78%
+   
+   464:00:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 57.99%
+   
+   464:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 46.14%
+   
+   465:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 61.32%
+   
+   465:30:00: Balanced after 11 trials
+              6 nodes had demands reduced by a total of 42.53%
+   
+   466:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 49.58%
+   
+   466:30:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 47.69%
+   
+   467:00:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 45.62%
+   
+   467:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 41.28%
+   
+   468:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 49.64%
+   
+   468:30:00: Balanced after 12 trials
+              9 nodes had demands reduced by a total of 52.40%
+   
+   469:00:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 46.79%
+   
+   469:30:00: Balanced after 8 trials
+              6 nodes had demands reduced by a total of 30.83%
+   
+   470:00:00: Balanced after 9 trials
+              6 nodes had demands reduced by a total of 53.40%
+   
+   470:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 72.81%
+   
+   471:00:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 36.61%
+   
+   471:30:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 46.26%
+   
+   472:00:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 49.87%
+   
+   472:30:00: Balanced after 10 trials
+              5 nodes had demands reduced by a total of 51.60%
+   
+   473:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 60.93%
+   
+   473:30:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 55.26%
+   
+   474:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 48.64%
+   
+   474:30:00: Balanced after 9 trials
+              5 nodes had demands reduced by a total of 55.47%
+   
+   475:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 38.32%
+   
+   475:30:00: Balanced after 13 trials
+              11 nodes had demands reduced by a total of 45.16%
+   
+   476:00:00: Balanced after 10 trials
+              6 nodes had demands reduced by a total of 59.58%
+   
+   476:30:00: Balanced after 12 trials
+              7 nodes had demands reduced by a total of 67.04%
+   
+   477:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 35.58%
+   
+   477:30:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 36.74%
+   
+   478:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 47.10%
+   
+   478:30:00: Balanced after 12 trials
+              10 nodes had demands reduced by a total of 52.14%
+   
+   479:00:00: Balanced after 12 trials
+              9 nodes had demands reduced by a total of 65.75%
+   
+   479:30:00: Balanced after 9 trials
+              10 nodes had demands reduced by a total of 54.23%
+   
+   480:00:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 35.59%
+   
+   480:30:00: Balanced after 8 trials
+              5 nodes had demands reduced by a total of 29.07%
+   
+   481:00:00: Balanced after 9 trials
+              12 nodes had demands reduced by a total of 39.47%
+   
+   481:30:00: Balanced after 8 trials
+              10 nodes had demands reduced by a total of 31.80%
+   
+   482:00:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 30.92%
+   
+   482:30:00: Balanced after 7 trials
+              5 nodes had demands reduced by a total of 33.15%
+   
+   483:00:00: Balanced after 10 trials
+              6 nodes had demands reduced by a total of 29.87%
+   
+   483:30:00: Balanced after 10 trials
+              14 nodes had demands reduced by a total of 53.36%
+   
+   484:00:00: Balanced after 12 trials
+              11 nodes had demands reduced by a total of 57.23%
+   
+   484:30:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 27.90%
+   
+   485:00:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 49.17%
+   
+   485:30:00: Balanced after 9 trials
+              4 nodes had demands reduced by a total of 67.13%
+   
+   486:00:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 60.84%
+   
+   486:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 35.69%
+   
+   487:00:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 49.27%
+   
+   487:30:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 49.51%
+   
+   488:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 54.04%
+   
+   488:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 51.99%
+   
+   489:00:00: Balanced after 10 trials
+              8 nodes had demands reduced by a total of 45.94%
+   
+   489:30:00: Balanced after 9 trials
+              9 nodes had demands reduced by a total of 43.10%
+   
+   490:00:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 57.44%
+   
+   490:30:00: Balanced after 8 trials
+              6 nodes had demands reduced by a total of 39.24%
+   
+   491:00:00: Balanced after 10 trials
+              10 nodes had demands reduced by a total of 50.62%
+   
+   491:30:00: Balanced after 10 trials
+              11 nodes had demands reduced by a total of 40.78%
+   
+   492:00:00: Balanced after 11 trials
+              9 nodes had demands reduced by a total of 44.06%
+   
+   492:30:00: Balanced after 12 trials
+              11 nodes had demands reduced by a total of 66.12%
+   
+   493:00:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 37.26%
+   
+   493:30:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 57.24%
+   
+   494:00:00: Balanced after 8 trials
+              4 nodes had demands reduced by a total of 64.42%
+   
+   494:30:00: Balanced after 8 trials
+              6 nodes had demands reduced by a total of 27.84%
+   
+   495:00:00: Balanced after 10 trials
+              7 nodes had demands reduced by a total of 50.15%
+   
+   495:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 55.73%
+   
+   496:00:00: Balanced after 7 trials
+              7 nodes had demands reduced by a total of 29.75%
+   
+   496:30:00: Balanced after 7 trials
+              3 nodes had demands reduced by a total of 44.85%
+   
+   497:00:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 51.90%
+   
+   497:30:00: Balanced after 10 trials
+              9 nodes had demands reduced by a total of 55.07%
+   
+   498:00:00: Balanced after 11 trials
+              11 nodes had demands reduced by a total of 49.88%
+   
+   498:30:00: Balanced after 11 trials
+              10 nodes had demands reduced by a total of 50.89%
+   
+   499:00:00: Balanced after 9 trials
+              8 nodes had demands reduced by a total of 49.03%
+   
+   499:30:00: Balanced after 9 trials
+              7 nodes had demands reduced by a total of 39.08%
+   
+   500:00:00: Balanced after 7 trials
+              3 nodes had demands reduced by a total of 46.56%
+   
+   500:30:00: Balanced after 7 trials
+              4 nodes had demands reduced by a total of 42.80%
+   
+  Analysis ended Wed Jul 22 15:01:16 2026
