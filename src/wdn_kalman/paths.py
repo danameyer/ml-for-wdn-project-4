@@ -68,23 +68,19 @@ class ProjectPaths:
         return self.results_dir / "aggregated"
 
     @property
+    def neural_surrogate_evaluation_dir(self) -> Path:
+        return self.results_dir / "neural_surrogate_evaluation"
+
+    @property
     def plots_dir(self) -> Path:
         return self.results_dir / "plots"
 
     def create_output_dirs(self) -> None:
-        """Create directories written by the project."""
-        self.models_dir.mkdir(
-            parents=True,
-            exist_ok=True,
-        )
-        self.aggregated_results_dir.mkdir(
-            parents=True,
-            exist_ok=True,
-        )
-        self.plots_dir.mkdir(
-            parents=True,
-            exist_ok=True,
-        )
+        """Create project directories."""
+        self.models_dir.mkdir(parents=True, exist_ok=True)
+        self.aggregated_results_dir.mkdir(parents=True, exist_ok=True)
+        self.neural_surrogate_evaluation_dir.mkdir(parents=True, exist_ok=True)
+        self.plots_dir.mkdir(parents=True,exist_ok=True)
 
     def validate_inputs(self) -> None:
         """Check that project inputs are available."""
