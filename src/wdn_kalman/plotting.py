@@ -1,9 +1,7 @@
-"""Plot aggregated Kalman-filter results."""
+"""Plot evaluation results."""
 
 from pathlib import Path
-
 import matplotlib.pyplot as plt
-
 from wdn_kalman.paths import ProjectPaths
 from wdn_kalman.results import ExperimentResult
 
@@ -11,25 +9,15 @@ from wdn_kalman.results import ExperimentResult
 class BaselinePlot:
     """Plot baseline experiment results."""
 
-    def __init__(
-        self,
-        paths: ProjectPaths,
-    ):
+    def __init__(self, paths: ProjectPaths):
         self.paths = paths
 
-    def plot_file(
-            self,
-            result: ExperimentResult,
-            kalman_type: str,
-    ) -> Path:
+    def plot_file(self, result: ExperimentResult, kalman_type: str) -> Path:
         """Return the output path for a result plot."""
         ensemble_part = ""
 
         if result.ensemble_size is not None:
-            ensemble_part = (
-                f"ensemble_size="
-                f"{result.ensemble_size}_"
-            )
+            ensemble_part = f"ensemble_size={result.ensemble_size}_"
 
         return (
                 self.paths.plots_dir
@@ -50,54 +38,85 @@ class BaselinePlot:
         show: bool = True,
     ) -> Path:
         """Plot mean error and standard deviation."""
-        plot_file = self.plot_file(
-            result,
-            kalman_type,
-        )
+        plot_file = self.plot_file(result, kalman_type)
 
-        plot_file.parent.mkdir(
-            parents=True,
-            exist_ok=True,
-        )
+        plot_file.parent.mkdir(parents=True, exist_ok=True)
 
-        figure, axes = plt.subplots(
-            figsize=(7, 4)
-        )
+        figure, axes = plt.subplots(figsize=(7, 4))
 
-        axes.errorbar(
-            result.sensors,
-            result.mean_scores,
-            yerr=result.std_scores,
-            marker="o",
-            capsize=4,
-        )
+        axes.errorbar(result.sensors,
+                      result.mean_scores,
+                      yerr=result.std_scores,
+                      marker="o",
+                      capsize=4
+                      )
 
-        axes.set_xlabel(
-            "Number of sensors per type"
-        )
-        axes.set_ylabel(
-            "Median absolute chlorine estimation error"
-        )
-        axes.set_title(
-            f"{kalman_type} with neural surrogate: "
-            f"{result.dataset.net_name}"
-        )
+        axes.set_xlabel("Number of sensors per type")
+        axes.set_ylabel("Median absolute chlorine estimation error")
+        axes.set_title(f"{kalman_type} with neural surrogate: {result.dataset.net_name}")
         axes.grid(True)
-
         figure.tight_layout()
-        figure.savefig(
-            plot_file,
-            dpi=200,
-            bbox_inches="tight",
-        )
+        figure.savefig(plot_file, dpi=200, bbox_inches="tight",)
 
         if show:
             plt.show()
 
         plt.close(figure)
 
-        print(
-            f"Saved plot to: {plot_file}"
+        print(f"Saved plot to: {plot_file}")
+
+        return plot_file
+
+class SurrogatePlot:
+    """Plot evaluation results for neural surrogate model."""
+
+    def __init__(self, paths: ProjectPaths):
+        self.paths = paths
+
+    def node_prediction_plot_file(self, result, node_id: str) -> Path:
+        """Return output path for node prediction plot."""
+        return (
+                self.paths.plots_dir
+                / (
+                    f"surrogate_"
+                    f"{result.dataset.file_prefix}_"
+                    f"node={node_id}_prediction.png"
+                )
         )
+
+    def plot_node_prediction(
+            self,
+            result,
+            node_id: str,
+            show: bool = True,
+            max_steps: int = 200
+    ) -> Path:
+        """Plot true and predicted chlorine concentration at same node."""
+        node_id = str(node_id)
+        node_index = result.node_index(node_id)
+
+        plot_file = self.node_prediction_plot_file(result=result, node_id=node_id,)
+        plot_file.parent.mkdir(parents=True, exist_ok=True)
+
+        chlorine_true_values = result.chlorine_true[:max_steps, node_index]
+        chlorine_predictions = result.chlorine_predictions[:max_steps, node_index]
+
+        figure, axes = plt.subplots(figsize=(7, 4))
+        axes.plot(chlorine_true_values, label="Ground truth")
+        axes.plot(chlorine_predictions, label="Prediction")
+        axes.set_xlabel("Time step")
+        axes.set_ylabel("Chlorine concentration (mg/L)")
+        axes.set_title(f"Neural surrogate: {result.dataset.net_name}, node {node_id}")
+        axes.set_xticks(range(0, max_steps + 1, 20))
+        axes.grid(True)
+        axes.legend()
+        figure.tight_layout()
+        figure.savefig(plot_file, dpi=200, bbox_inches="tight")
+
+        if show:
+            plt.show()
+
+        plt.close(figure)
+        print(f"Saved plot to: {plot_file}")
 
         return plot_file
