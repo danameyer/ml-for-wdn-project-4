@@ -79,6 +79,12 @@ def parse_args() -> argparse.Namespace:
         ),
     )
 
+    parser.add_argument(
+        "--model",
+        choices=("surrogate", "gnn"),
+        default="surrogate",
+    )
+
     return parser.parse_args()
 
 
@@ -92,24 +98,31 @@ def main() -> None:
     dataset = DATASETS[args.dataset]
 
     if args.result_file is None:
+        if args.model == "gnn":
+            model_name = "gnn_"
+        else:
+            model_name = ""
+
         if args.kalman_type == "EnKF":
             result_filename = (
-                f"{dataset.file_prefix}_enkf_"
+                f"{dataset.file_prefix}_"
+                f"{model_name}"
+                f"enkf_"
                 f"n_iters={args.n_iters}_"
-                f"ensemble_size={args.ensemble_size}_"
+                f"ensemble_size="
+                f"{args.ensemble_size}_"
                 f"seed={args.seed}.npz"
             )
         else:
             result_filename = (
-                f"{dataset.file_prefix}_ekf_"
+                f"{dataset.file_prefix}_"
+                f"{model_name}"
+                f"ekf_"
                 f"n_iters={args.n_iters}_"
                 f"seed={args.seed}.npz"
             )
 
-        result_file = (
-                paths.aggregated_results_dir
-                / result_filename
-        )
+        result_file = paths.aggregated_results_dir / result_filename
     else:
         result_file = args.result_file
 
@@ -123,6 +136,7 @@ def main() -> None:
     plotter.plot_experiment_results(
         result=result,
         kalman_type=args.kalman_type,
+        model=args.model,
         show=not args.no_show,
     )
 

@@ -12,8 +12,14 @@ class BaselinePlot:
     def __init__(self, paths: ProjectPaths):
         self.paths = paths
 
-    def plot_file(self, result: ExperimentResult, kalman_type: str) -> Path:
+    def plot_file(self, result: ExperimentResult, kalman_type: str, model: str) -> Path:
         """Return the output path for a result plot."""
+        model_name = (
+            "gnn"
+            if model == "gnn"
+            else "surrogate"
+        )
+
         ensemble_part = ""
 
         if result.ensemble_size is not None:
@@ -22,7 +28,7 @@ class BaselinePlot:
         return (
                 self.paths.plots_dir
                 / (
-                    f"baseline_"
+                    f"{model_name}_"
                     f"{result.dataset.file_prefix}_"
                     f"{kalman_type.lower()}_"
                     f"n_iters={result.n_iters}_"
@@ -35,10 +41,11 @@ class BaselinePlot:
         self,
         result: ExperimentResult,
         kalman_type: str,
+        model: str,
         show: bool = True,
     ) -> Path:
         """Plot mean error and standard deviation."""
-        plot_file = self.plot_file(result, kalman_type)
+        plot_file = self.plot_file(result=result, kalman_type=kalman_type, model=model)
 
         plot_file.parent.mkdir(parents=True, exist_ok=True)
 
@@ -53,7 +60,8 @@ class BaselinePlot:
 
         axes.set_xlabel("Number of sensors per type")
         axes.set_ylabel("Median absolute chlorine estimation error")
-        axes.set_title(f"{kalman_type} with neural surrogate: {result.dataset.net_name}")
+        model_label = "GNN"  if model == "gnn" else "neural surrogate"
+        axes.set_title(f"{kalman_type} with {model_label}: {result.dataset.net_name}")
         axes.grid(True)
         figure.tight_layout()
         figure.savefig(plot_file, dpi=200, bbox_inches="tight",)
