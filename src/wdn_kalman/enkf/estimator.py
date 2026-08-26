@@ -21,7 +21,7 @@ class EnKFExperimentConfig:
     ensemble_size: int = 50
     initial_variance: float = 0.01
     process_variance: float = 0.001
-    measurement_variance: float = 0.01
+    measurement_variance: float = 0.003
     seed: int = 42
 
 

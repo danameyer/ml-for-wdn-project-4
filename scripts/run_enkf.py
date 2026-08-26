@@ -66,7 +66,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--measurement-variance",
         type=float,
-        default=0.01,
+        default=0.003,
         help="Measurement noise variance.",
     )
 
