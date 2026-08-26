@@ -1,7 +1,6 @@
-"""Ensemble Kalman Filter setup."""
+"""EnKF setup."""
 
 from dataclasses import dataclass
-
 import numpy as np
 
 @dataclass
@@ -44,7 +43,7 @@ class GaussianNoiseModel:
         return self.rng.multivariate_normal(
             mean=np.zeros(self.state_dim),
             cov=self.process_covariance,
-            size=count,
+            size=count
         )
 
     def sample_measurement_noise(self, count):
@@ -52,7 +51,7 @@ class GaussianNoiseModel:
         return self.rng.multivariate_normal(
             mean=np.zeros(self.obs_dim),
             cov=self.measurement_covariance,
-            size=count,
+            size=count
         )
 
     def reset(self):
@@ -63,29 +62,12 @@ class GaussianNoiseModel:
 class EnsembleState:
     """Store ensemble members and calculate ensemble statistics."""
 
-    def __init__(
-        self,
-        initial_state,
-        ensemble_size,
-        noise_model,
-    ):
+    def __init__(self, initial_state, ensemble_size, noise_model):
         """Initialize ensemble."""
-        self.initial_state = np.asarray(
-            initial_state,
-            dtype=float,
-        ).reshape(-1)
-
+        self.initial_state = np.asarray(initial_state, dtype=float).reshape(-1)
         self.ensemble_size = ensemble_size
         self.noise_model = noise_model
-
-        self.members = np.empty(
-            (
-                self.ensemble_size,
-                self.initial_state.size,
-            ),
-            dtype=float,
-        )
-
+        self.members = np.empty((self.ensemble_size, self.initial_state.size), dtype=float)
         self.reset_mean()
 
     @property
@@ -118,19 +100,21 @@ class EnsembleState:
         self.members += (desired_mean - self.mean).reshape(1, -1)
 
     def set_values(self, indices, values):
-        """
-        Shift ensemble so mean matches observed flows.
-        """
+        """Shift ensemble so mean matches observed flows."""
         indices = np.asarray(indices, dtype=int)
         values = np.asarray(values, dtype=float)
         shifts = (np.asarray(values)- self.mean[indices])
         self.members[:, indices] += shifts
 
+    def set_exact_values(self, indices, values):
+        """Set selected state values exactly for all ensemble members."""
+        indices = np.asarray(indices, dtype=int)
+        values = np.asarray(values,dtype=float)
+        self.members[:, indices] = values
+
 
 class TimeVaryingEnsembleKalmanFilter:
-    """
-    Set up time-varying EnKF.
-    """
+    """Set up time-varying EnKF."""
 
     def __init__(
         self,
@@ -148,15 +132,9 @@ class TimeVaryingEnsembleKalmanFilter:
         self.state_dim = state_dim
         self.obs_dim = obs_dim
         self.config = config or EnKFConfig()
-
         self._get_state_transition_func = get_state_transition_func
-
         self._get_measurement_func = get_measurement_func
-
-        self._initial_state = np.asarray(
-            init_state,
-            dtype=float,
-            )
+        self._initial_state = np.asarray(init_state,dtype=float)
 
         self._noise = GaussianNoiseModel(
             state_dim=state_dim,
@@ -207,17 +185,12 @@ class TimeVaryingEnsembleKalmanFilter:
         self._state.shift_mean(self._x)
         transition = self._get_state_transition_func(self._time_step)
         measurement = self._get_measurement_func(self._time_step)
-
         self._predict(transition)
         self._correct(observation, measurement)
-
         self._x = self._state.mean.copy()
         self._time_step += 1
 
-        return (
-            self._x.copy(),
-            self._state.covariance.copy(),
-        )
+        return self._x.copy(), self._state.covariance.copy()
 
     def _predict(self, transition):
         """Propagate members through the surrogate model and add Q noise."""
@@ -256,6 +229,11 @@ class TimeVaryingEnsembleKalmanFilter:
     def set_state_values(self, indices, values):
         """insert known state values (e.g. measured flows)."""
         self._state.set_values(indices=indices,values=values)
+        self._x = self._state.mean.copy()
+
+    def set_exact_state_values(self, indices, values):
+        """Set selected state values exactly."""
+        self._state.set_exact_values(indices=indices, values=values)
         self._x = self._state.mean.copy()
 
     def reset(self):
