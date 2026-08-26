@@ -4,3 +4,4 @@ water-benchmark-hub
 seaborn
 numpy~=2.5.1
 matplotlib~=3.11.1
+torch-geometric
