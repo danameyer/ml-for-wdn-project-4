@@ -1,0 +1,33 @@
+Filter:    ekf
+Job:       240701
+Array ID:  10
+Seed:      52
+Host:      assistant-3.GPU.CIT-EC.NET
+Dataset:   hanoi
+
+Running Hanoi GNN EKF: 24 sensor counts × 1 sensor placements
+2 sensors/type: 1.0706 ± 0.2936
+3 sensors/type: 1.1066 ± 0.2799
+4 sensors/type: 1.0836 ± 0.2697
+5 sensors/type: 1.0113 ± 0.2895
+6 sensors/type: 0.9862 ± 0.2532
+7 sensors/type: 0.9829 ± 0.2766
+8 sensors/type: 0.9715 ± 0.2712
+9 sensors/type: 0.9741 ± 0.2677
+10 sensors/type: 0.9337 ± 0.2619
+11 sensors/type: 0.9799 ± 0.2945
+12 sensors/type: 0.9250 ± 0.2631
+13 sensors/type: 0.9001 ± 0.2630
+14 sensors/type: 0.9478 ± 0.2891
+15 sensors/type: 0.8731 ± 0.2554
+16 sensors/type: 0.9001 ± 0.2713
+17 sensors/type: 0.8808 ± 0.2528
+18 sensors/type: 0.8883 ± 0.2701
+19 sensors/type: 0.8589 ± 0.2466
+20 sensors/type: 0.8924 ± 0.2695
+21 sensors/type: 0.8589 ± 0.2598
+22 sensors/type: 0.8767 ± 0.2674
+23 sensors/type: 0.8597 ± 0.2570
+24 sensors/type: 0.8706 ± 0.2621
+25 sensors/type: 0.8344 ± 0.2556
+Saved gnn EKF result to: /homes/dameyer/ml-for-wdn-project-4/results/aggregated/hanoi_gnn_ekf_n_iters=1_seed=52.npz
