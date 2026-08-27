@@ -2,6 +2,8 @@
 
 from pathlib import Path
 import matplotlib.pyplot as plt
+import numpy as np
+
 from wdn_kalman.paths import ProjectPaths
 from wdn_kalman.results import ExperimentResult
 
@@ -46,17 +48,27 @@ class BaselinePlot:
     ) -> Path:
         """Plot mean error and standard deviation."""
         plot_file = self.plot_file(result=result, kalman_type=kalman_type, model=model)
-
         plot_file.parent.mkdir(parents=True, exist_ok=True)
-
         figure, axes = plt.subplots(figsize=(7, 4))
+        finite_mask = np.isfinite(result.mean_scores) & np.isfinite(result.std_scores)
+        plot_means = np.where(finite_mask, result.mean_scores, np.nan)
+        plot_stds = np.where(finite_mask, result.std_scores, np.nan)
 
-        axes.errorbar(result.sensors,
-                      result.mean_scores,
-                      yerr=result.std_scores,
-                      marker="o",
-                      capsize=4
-                      )
+        axes.errorbar(result.sensors, plot_means, yerr=plot_stds, marker="o", capsize=4)
+        axes.set_xticks(result.sensors)
+
+        for sensor_count, is_finite in zip(result.sensors, finite_mask):
+            if not is_finite:
+                axes.text(
+                    sensor_count,
+                    0.03,
+                    "",
+                    transform=axes.get_xaxis_transform(),
+                    ha="center",
+                    va="bottom",
+                    rotation=90,
+                    fontsize=8,
+                )
 
         axes.set_xlabel("Number of sensors per type")
         axes.set_ylabel("Median absolute chlorine estimation error")
