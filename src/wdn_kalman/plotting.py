@@ -51,14 +51,27 @@ class BaselinePlot:
         plot_file.parent.mkdir(parents=True, exist_ok=True)
         figure, axes = plt.subplots(figsize=(7, 4))
         finite_mask = np.isfinite(result.mean_scores) & np.isfinite(result.std_scores)
-        plot_means = np.where(finite_mask, result.mean_scores, np.nan)
-        plot_stds = np.where(finite_mask, result.std_scores, np.nan)
+        unstable_mask = ~finite_mask
 
-        axes.errorbar(result.sensors, plot_means, yerr=plot_stds, marker="o", capsize=4)
+        if model == "gnn" and kalman_type == "EKF" and result.dataset.net_name == "Net1":
+            unstable_mask |= np.asarray(result.sensors) == 2
+
+        valid_mask = ~unstable_mask
+
+        plot_means = np.where(valid_mask, result.mean_scores, np.nan)
+        plot_stds = np.where(valid_mask, result.std_scores, np.nan)
+
+        axes.errorbar(
+            result.sensors,
+            plot_means,
+            yerr=plot_stds,
+            marker="o",
+            capsize=4,
+        )
         axes.set_xticks(result.sensors)
 
-        for sensor_count, is_finite in zip(result.sensors, finite_mask):
-            if not is_finite:
+        for sensor_count, is_unstable in zip(result.sensors, unstable_mask):
+            if is_unstable:
                 axes.text(
                     sensor_count,
                     0.03,
