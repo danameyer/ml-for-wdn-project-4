@@ -1,0 +1,14 @@
+{
+  "dataset": "Net1",
+  "buffer_size": 15,
+  "unroll_steps": 25,
+  "epochs": 600,
+  "lr": 0.001,
+  "seed": 42,
+  "link_loss_weight": 1.0,
+  "buffer_spread_weight": 0.01,
+  "total_loss": 1681.280122756958,
+  "node_loss": 974.1459172591567,
+  "link_loss": 707.1250021718442,
+  "spread_loss": 0.9222504607168958
+}

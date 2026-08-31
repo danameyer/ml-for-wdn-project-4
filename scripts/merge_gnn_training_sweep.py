@@ -39,6 +39,7 @@ def main() -> None:
     node_losses = np.full((len(ROLLOUTS), len(BUFFER_SIZES)), np.nan)
     total_losses = np.full_like(node_losses, np.nan)
     link_losses = np.full_like(node_losses, np.nan)
+    chlorine_losses = np.full_like(node_losses, np.nan)
     spread_losses = np.full_like(node_losses, np.nan)
     missing_configs = []
 
@@ -56,14 +57,15 @@ def main() -> None:
             node_losses[rollout_index, buffer_index] = result["node_loss"]
             total_losses[rollout_index, buffer_index] = result["total_loss"]
             link_losses[rollout_index, buffer_index] = result["link_loss"]
+            chlorine_losses[rollout_index, buffer_index] = result["node_loss"] + result["link_loss"]
             spread_losses[rollout_index, buffer_index] = result["spread_loss"]
 
-    print("\nNode concentration reconstruction loss")
+    print("\nNode and link chlorine reconstruction loss")
     print("Rows = rollout length, columns = buffer size\n")
     print("rollout", *[f"{buffer:>10}" for buffer in BUFFER_SIZES])
 
     for rollout_index, rollout in enumerate(ROLLOUTS):
-        values = node_losses[rollout_index]
+        values = chlorine_losses[rollout_index]
 
         print(f"{rollout:>7}", *[f"{value:10.0f}" for value in values])
 
@@ -76,17 +78,18 @@ def main() -> None:
         node_losses=node_losses,
         total_losses=total_losses,
         link_losses=link_losses,
+        chlorine_losses=chlorine_losses,
         spread_losses=spread_losses,
     )
 
-    csv_file = result_dir/ f"{args.dataset}_gnn_training_sweep_node_loss.csv"
+    csv_file = result_dir / f"{args.dataset}_gnn_training_sweep_chlorine_loss.csv"
 
     with csv_file.open("w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
         writer.writerow(["rollout", *BUFFER_SIZES])
 
         for rollout_index, rollout in enumerate(ROLLOUTS):
-            writer.writerow([rollout, *node_losses[rollout_index].tolist()])
+            writer.writerow([rollout, *chlorine_losses[rollout_index].tolist()])
 
     print(f"\nSaved: {npz_file}")
     print(f"Saved: {csv_file}")
