@@ -109,71 +109,70 @@ def train_water_network(
             f"Spread: {epoch_spread_loss:.6f}"
         )
 
+    return {
+        "total_loss": float(epoch_loss),
+        "node_loss": float(epoch_node_loss),
+        "link_loss": float(epoch_link_loss),
+        "spread_loss": float(epoch_spread_loss),
+    }
+
+
 def train_flow_reconstruction(model, edge_index, edge_attr, edge_flows, node_concentrations_matrix,
-                              non_source_nodes_mask=[], epochs=100, unroll_steps=10, lr=0.001):
+                              non_source_nodes_mask=[], flow_sensor_mask=[], node_sensor_mask=[], epochs=100,
+                              unroll_steps=10, lr=0.001):
     model.eval()
+
     device = node_concentrations_matrix.device
+    flow_criterion = nn.MSELoss()
+    concentration_criterion = nn.MSELoss()
 
-    persistent_flows = edge_attr[:, 1].clone().detach().to(device)
-    persistent_buffers = torch.zeros(edge_index.size(1), model.buffer_size, device=device)
-    persistent_concentrations = node_concentrations_matrix[0].clone().detach().to(device)
+    flow_sensor_mask_inv = ~flow_sensor_mask
+    node_sensor_mask_inv = ~node_sensor_mask
 
-    # Pre-compute static structural masks
-    flow_sensor_mask = (edge_flows != 0).to(device)
-    node_sensor_mask = (node_concentrations_matrix != 0).to(device)
+    input_flows = (torch.rand(sum(flow_sensor_mask_inv)) * max(edge_flows[0])).to(device).requires_grad_(True)
+    input_concentrations = torch.rand((sum(node_sensor_mask_inv), 1)).clone().detach().to(device).requires_grad_(True)
+    input_buffers = torch.rand(edge_index.size(1), model.buffer_size, device=device).detach().requires_grad_(True)
+
+    optimizer = torch.optim.Adam([input_flows, input_buffers, input_concentrations], lr=lr)
 
     for epoch in range(epochs):
-        input_flows = persistent_flows.clone().detach().requires_grad_(True)
-        input_buffers = persistent_buffers.clone().detach().requires_grad_(True)
-        concentration_aggregate_in = persistent_concentrations.clone().detach().requires_grad_(True)
-
-        optimizer = torch.optim.Adam([input_flows, input_buffers, concentration_aggregate_in], lr=lr)
-
-        flow_criterion = nn.MSELoss()
-        concentration_criterion = nn.MSELoss()
         loss = 0.0
+        predicted_flows = edge_flows[0].clone().detach().to(device).requires_grad_(False)
+        predicted_flows[~flow_sensor_mask] = input_flows
 
-        for step in range(len(edge_flows) - 1):
-            current_gt_flow = edge_flows[step].to(device)
-            current_gt_conc = node_concentrations_matrix[step].to(device)
+        predicted_concentrations = node_concentrations_matrix[0].clone().detach().to(device).requires_grad_(False)
+        predicted_concentrations[~node_sensor_mask.flatten()] = input_concentrations
 
-            active_flows = torch.where(flow_sensor_mask[step], current_gt_flow, input_flows)
-            active_conc = torch.where(node_sensor_mask[step], current_gt_conc, concentration_aggregate_in)
+        predicted_buffers = input_buffers
+
+        for step in range(20):
+            predicted_flows = torch.where(flow_sensor_mask, edge_flows[step], predicted_flows)
+            predicted_concentrations = torch.where(node_sensor_mask, node_concentrations_matrix[step],
+                                                   predicted_concentrations)
 
             edge_attr_dynamic = torch.stack([
-                active_flows,
+                predicted_flows,
                 edge_attr[:, 0].to(device),
                 edge_attr[:, 1].to(device)
             ], dim=-1)
 
-            concentration_aggregate_in, input_buffers, predicted_flows = model(
-                active_conc,
+            predicted_concentrations, predicted_buffers, predicted_flows = model(
+                predicted_concentrations,
                 edge_index.to(device),
-                input_buffers,
+                predicted_buffers,
                 edge_attr_dynamic
             )
 
             next_gt_flow = edge_flows[step + 1].to(device)
             next_gt_conc = node_concentrations_matrix[step + 1].to(device)
 
-            loss += flow_criterion(predicted_flows, next_gt_flow)
-            loss += concentration_criterion(node_sensor_mask[step + 1] * concentration_aggregate_in,
-                                            node_sensor_mask[step + 1] * next_gt_conc)
+            loss += flow_criterion(predicted_flows * flow_sensor_mask_inv, next_gt_flow * flow_sensor_mask_inv)
+            loss += concentration_criterion(predicted_concentrations, next_gt_conc)
 
         optimizer.zero_grad()
         loss.backward()
 
-        if input_flows.grad is not None:
-            # Mask out global sensor locations across the window
-            global_flow_mask = (edge_flows.sum(dim=0) != 0).to(device)
-            input_flows.grad *= (~global_flow_mask).float()
-
-        torch.nn.utils.clip_grad_norm_([input_flows, input_buffers, concentration_aggregate_in], max_norm=1.0)
+        torch.nn.utils.clip_grad_norm_([input_flows, input_buffers, input_concentrations], max_norm=1.0)
         optimizer.step()
-
-        with torch.no_grad():
-            persistent_flows = input_flows.clone().detach()
-            persistent_buffers = input_buffers.clone().detach()
-            persistent_concentrations = concentration_aggregate_in.clone().detach()
 
         print(f'Epoch {epoch + 1}/{epochs}, Loss: {loss.item():.6f}')
